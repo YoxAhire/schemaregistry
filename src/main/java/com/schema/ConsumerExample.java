@@ -42,7 +42,7 @@ public class ConsumerExample {
                    {
 
                        System.out.println("Key : "+record.key()
-                                       +  "  Id : "+record.value().getId()
+                                       /*+  "  Id : "+record.value().getId()*/
                                       /* +  "  location : "+record.value().getAmount()*/
                        );
 

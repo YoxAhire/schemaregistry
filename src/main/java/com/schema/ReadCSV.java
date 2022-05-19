@@ -11,7 +11,8 @@ public class ReadCSV {
 
     //public String csvFileName = "data/payId_Location.csv";
     //public String csvFileName = "data/payId_Amount.csv";
-    public String csvFileName = "data/payId_Amount_Location.csv";
+    //public String csvFileName = "data/payId_Amount_Location.csv";
+    public String csvFileName = "data/rr2.csv";
 
 
     public List Paylist;

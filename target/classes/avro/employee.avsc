@@ -1,0 +1,30 @@
+{
+  "namespace": "com.schema",
+  "type": "record",
+  "name": "Payment",
+  "version": "1",
+  "fields": [
+    { "name": "id", "type": "string"},
+    { "name": "amount", "type": "int"},
+    { "name":"location","type":"string","default":""},
+	{ "name":"FirstName","type":"string","default":""},
+	{ "name":"MiddleInitial","type":"string","default":""},
+	{ "name":"LastName","type":"string","default":""},
+	{ "name":"Gender","type":"string","default":""},
+	{ "name":"EMail","type":"string","default":""},
+	{ "name":"FathersName","type":"string","default":""},
+	{ "name":"MothersName","type":"string","default":""},
+	{ "name":"DateofBirth","type":"string","default":""},
+	{ "name":"AgeinYrs","type":"string","default":""},
+	{ "name":"WeightinKgs","type":"string","default":""},
+	{ "name":"YearofJoining","type":"string","default":""},
+	{ "name":"MonthofJoining","type":"string","default":""},
+	{ "name":"Salary","type":"string","default":""},
+	{ "name":"SSN","type":"string","default":""},
+	{ "name":"PhoneNo","type":"string","default":""},
+	{ "name":"PlaceName","type":"string","default":""},
+	{ "name":"County","type":"string","default":""},
+	{ "name":"City","type":"string","default":""},
+	{ "name":"State","type":"string","default":""}
+  ]
+}

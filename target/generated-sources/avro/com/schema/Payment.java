@@ -14,10 +14,10 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class Payment extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7925307020745396758L;
+  private static final long serialVersionUID = 3160438816702957485L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Payment\",\"namespace\":\"com.schema\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"amount\",\"type\":\"double\"},{\"name\":\"location\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"}],\"version\":\"1\"}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Payment\",\"namespace\":\"com.schema\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"amount\",\"type\":\"int\"},{\"name\":\"location\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"FirstName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"MiddleInitial\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"LastName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"Gender\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"EMail\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"FathersName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"MothersName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"DateofBirth\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"AgeinYrs\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"WeightinKgs\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"YearofJoining\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"MonthofJoining\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"Salary\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"SSN\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"PhoneNo\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"PlaceName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"County\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"City\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"},{\"name\":\"State\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":\"\"}],\"version\":\"1\"}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -74,8 +74,27 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   private java.lang.String id;
-  private double amount;
+  private int amount;
   private java.lang.String location;
+  private java.lang.String FirstName;
+  private java.lang.String MiddleInitial;
+  private java.lang.String LastName;
+  private java.lang.String Gender;
+  private java.lang.String EMail;
+  private java.lang.String FathersName;
+  private java.lang.String MothersName;
+  private java.lang.String DateofBirth;
+  private java.lang.String AgeinYrs;
+  private java.lang.String WeightinKgs;
+  private java.lang.String YearofJoining;
+  private java.lang.String MonthofJoining;
+  private java.lang.String Salary;
+  private java.lang.String SSN;
+  private java.lang.String PhoneNo;
+  private java.lang.String PlaceName;
+  private java.lang.String County;
+  private java.lang.String City;
+  private java.lang.String State;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -89,11 +108,49 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param id The new value for id
    * @param amount The new value for amount
    * @param location The new value for location
+   * @param FirstName The new value for FirstName
+   * @param MiddleInitial The new value for MiddleInitial
+   * @param LastName The new value for LastName
+   * @param Gender The new value for Gender
+   * @param EMail The new value for EMail
+   * @param FathersName The new value for FathersName
+   * @param MothersName The new value for MothersName
+   * @param DateofBirth The new value for DateofBirth
+   * @param AgeinYrs The new value for AgeinYrs
+   * @param WeightinKgs The new value for WeightinKgs
+   * @param YearofJoining The new value for YearofJoining
+   * @param MonthofJoining The new value for MonthofJoining
+   * @param Salary The new value for Salary
+   * @param SSN The new value for SSN
+   * @param PhoneNo The new value for PhoneNo
+   * @param PlaceName The new value for PlaceName
+   * @param County The new value for County
+   * @param City The new value for City
+   * @param State The new value for State
    */
-  public Payment(java.lang.String id, java.lang.Double amount, java.lang.String location) {
+  public Payment(java.lang.String id, java.lang.Integer amount, java.lang.String location, java.lang.String FirstName, java.lang.String MiddleInitial, java.lang.String LastName, java.lang.String Gender, java.lang.String EMail, java.lang.String FathersName, java.lang.String MothersName, java.lang.String DateofBirth, java.lang.String AgeinYrs, java.lang.String WeightinKgs, java.lang.String YearofJoining, java.lang.String MonthofJoining, java.lang.String Salary, java.lang.String SSN, java.lang.String PhoneNo, java.lang.String PlaceName, java.lang.String County, java.lang.String City, java.lang.String State) {
     this.id = id;
     this.amount = amount;
     this.location = location;
+    this.FirstName = FirstName;
+    this.MiddleInitial = MiddleInitial;
+    this.LastName = LastName;
+    this.Gender = Gender;
+    this.EMail = EMail;
+    this.FathersName = FathersName;
+    this.MothersName = MothersName;
+    this.DateofBirth = DateofBirth;
+    this.AgeinYrs = AgeinYrs;
+    this.WeightinKgs = WeightinKgs;
+    this.YearofJoining = YearofJoining;
+    this.MonthofJoining = MonthofJoining;
+    this.Salary = Salary;
+    this.SSN = SSN;
+    this.PhoneNo = PhoneNo;
+    this.PlaceName = PlaceName;
+    this.County = County;
+    this.City = City;
+    this.State = State;
   }
 
   public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
@@ -104,6 +161,25 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
     case 0: return id;
     case 1: return amount;
     case 2: return location;
+    case 3: return FirstName;
+    case 4: return MiddleInitial;
+    case 5: return LastName;
+    case 6: return Gender;
+    case 7: return EMail;
+    case 8: return FathersName;
+    case 9: return MothersName;
+    case 10: return DateofBirth;
+    case 11: return AgeinYrs;
+    case 12: return WeightinKgs;
+    case 13: return YearofJoining;
+    case 14: return MonthofJoining;
+    case 15: return Salary;
+    case 16: return SSN;
+    case 17: return PhoneNo;
+    case 18: return PlaceName;
+    case 19: return County;
+    case 20: return City;
+    case 21: return State;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -113,8 +189,27 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: id = value$ != null ? value$.toString() : null; break;
-    case 1: amount = (java.lang.Double)value$; break;
+    case 1: amount = (java.lang.Integer)value$; break;
     case 2: location = value$ != null ? value$.toString() : null; break;
+    case 3: FirstName = value$ != null ? value$.toString() : null; break;
+    case 4: MiddleInitial = value$ != null ? value$.toString() : null; break;
+    case 5: LastName = value$ != null ? value$.toString() : null; break;
+    case 6: Gender = value$ != null ? value$.toString() : null; break;
+    case 7: EMail = value$ != null ? value$.toString() : null; break;
+    case 8: FathersName = value$ != null ? value$.toString() : null; break;
+    case 9: MothersName = value$ != null ? value$.toString() : null; break;
+    case 10: DateofBirth = value$ != null ? value$.toString() : null; break;
+    case 11: AgeinYrs = value$ != null ? value$.toString() : null; break;
+    case 12: WeightinKgs = value$ != null ? value$.toString() : null; break;
+    case 13: YearofJoining = value$ != null ? value$.toString() : null; break;
+    case 14: MonthofJoining = value$ != null ? value$.toString() : null; break;
+    case 15: Salary = value$ != null ? value$.toString() : null; break;
+    case 16: SSN = value$ != null ? value$.toString() : null; break;
+    case 17: PhoneNo = value$ != null ? value$.toString() : null; break;
+    case 18: PlaceName = value$ != null ? value$.toString() : null; break;
+    case 19: County = value$ != null ? value$.toString() : null; break;
+    case 20: City = value$ != null ? value$.toString() : null; break;
+    case 21: State = value$ != null ? value$.toString() : null; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -133,7 +228,7 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
    * Gets the value of the 'amount' field.
    * @return The value of the 'amount' field.
    */
-  public double getAmount() {
+  public int getAmount() {
     return amount;
   }
 
@@ -145,6 +240,196 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
    */
   public java.lang.String getLocation() {
     return location;
+  }
+
+
+
+  /**
+   * Gets the value of the 'FirstName' field.
+   * @return The value of the 'FirstName' field.
+   */
+  public java.lang.String getFirstName() {
+    return FirstName;
+  }
+
+
+
+  /**
+   * Gets the value of the 'MiddleInitial' field.
+   * @return The value of the 'MiddleInitial' field.
+   */
+  public java.lang.String getMiddleInitial() {
+    return MiddleInitial;
+  }
+
+
+
+  /**
+   * Gets the value of the 'LastName' field.
+   * @return The value of the 'LastName' field.
+   */
+  public java.lang.String getLastName() {
+    return LastName;
+  }
+
+
+
+  /**
+   * Gets the value of the 'Gender' field.
+   * @return The value of the 'Gender' field.
+   */
+  public java.lang.String getGender() {
+    return Gender;
+  }
+
+
+
+  /**
+   * Gets the value of the 'EMail' field.
+   * @return The value of the 'EMail' field.
+   */
+  public java.lang.String getEMail() {
+    return EMail;
+  }
+
+
+
+  /**
+   * Gets the value of the 'FathersName' field.
+   * @return The value of the 'FathersName' field.
+   */
+  public java.lang.String getFathersName() {
+    return FathersName;
+  }
+
+
+
+  /**
+   * Gets the value of the 'MothersName' field.
+   * @return The value of the 'MothersName' field.
+   */
+  public java.lang.String getMothersName() {
+    return MothersName;
+  }
+
+
+
+  /**
+   * Gets the value of the 'DateofBirth' field.
+   * @return The value of the 'DateofBirth' field.
+   */
+  public java.lang.String getDateofBirth() {
+    return DateofBirth;
+  }
+
+
+
+  /**
+   * Gets the value of the 'AgeinYrs' field.
+   * @return The value of the 'AgeinYrs' field.
+   */
+  public java.lang.String getAgeinYrs() {
+    return AgeinYrs;
+  }
+
+
+
+  /**
+   * Gets the value of the 'WeightinKgs' field.
+   * @return The value of the 'WeightinKgs' field.
+   */
+  public java.lang.String getWeightinKgs() {
+    return WeightinKgs;
+  }
+
+
+
+  /**
+   * Gets the value of the 'YearofJoining' field.
+   * @return The value of the 'YearofJoining' field.
+   */
+  public java.lang.String getYearofJoining() {
+    return YearofJoining;
+  }
+
+
+
+  /**
+   * Gets the value of the 'MonthofJoining' field.
+   * @return The value of the 'MonthofJoining' field.
+   */
+  public java.lang.String getMonthofJoining() {
+    return MonthofJoining;
+  }
+
+
+
+  /**
+   * Gets the value of the 'Salary' field.
+   * @return The value of the 'Salary' field.
+   */
+  public java.lang.String getSalary() {
+    return Salary;
+  }
+
+
+
+  /**
+   * Gets the value of the 'SSN' field.
+   * @return The value of the 'SSN' field.
+   */
+  public java.lang.String getSSN() {
+    return SSN;
+  }
+
+
+
+  /**
+   * Gets the value of the 'PhoneNo' field.
+   * @return The value of the 'PhoneNo' field.
+   */
+  public java.lang.String getPhoneNo() {
+    return PhoneNo;
+  }
+
+
+
+  /**
+   * Gets the value of the 'PlaceName' field.
+   * @return The value of the 'PlaceName' field.
+   */
+  public java.lang.String getPlaceName() {
+    return PlaceName;
+  }
+
+
+
+  /**
+   * Gets the value of the 'County' field.
+   * @return The value of the 'County' field.
+   */
+  public java.lang.String getCounty() {
+    return County;
+  }
+
+
+
+  /**
+   * Gets the value of the 'City' field.
+   * @return The value of the 'City' field.
+   */
+  public java.lang.String getCity() {
+    return City;
+  }
+
+
+
+  /**
+   * Gets the value of the 'State' field.
+   * @return The value of the 'State' field.
+   */
+  public java.lang.String getState() {
+    return State;
   }
 
 
@@ -191,8 +476,27 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
     implements org.apache.avro.data.RecordBuilder<Payment> {
 
     private java.lang.String id;
-    private double amount;
+    private int amount;
     private java.lang.String location;
+    private java.lang.String FirstName;
+    private java.lang.String MiddleInitial;
+    private java.lang.String LastName;
+    private java.lang.String Gender;
+    private java.lang.String EMail;
+    private java.lang.String FathersName;
+    private java.lang.String MothersName;
+    private java.lang.String DateofBirth;
+    private java.lang.String AgeinYrs;
+    private java.lang.String WeightinKgs;
+    private java.lang.String YearofJoining;
+    private java.lang.String MonthofJoining;
+    private java.lang.String Salary;
+    private java.lang.String SSN;
+    private java.lang.String PhoneNo;
+    private java.lang.String PlaceName;
+    private java.lang.String County;
+    private java.lang.String City;
+    private java.lang.String State;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +521,82 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
         this.location = data().deepCopy(fields()[2].schema(), other.location);
         fieldSetFlags()[2] = other.fieldSetFlags()[2];
       }
+      if (isValidValue(fields()[3], other.FirstName)) {
+        this.FirstName = data().deepCopy(fields()[3].schema(), other.FirstName);
+        fieldSetFlags()[3] = other.fieldSetFlags()[3];
+      }
+      if (isValidValue(fields()[4], other.MiddleInitial)) {
+        this.MiddleInitial = data().deepCopy(fields()[4].schema(), other.MiddleInitial);
+        fieldSetFlags()[4] = other.fieldSetFlags()[4];
+      }
+      if (isValidValue(fields()[5], other.LastName)) {
+        this.LastName = data().deepCopy(fields()[5].schema(), other.LastName);
+        fieldSetFlags()[5] = other.fieldSetFlags()[5];
+      }
+      if (isValidValue(fields()[6], other.Gender)) {
+        this.Gender = data().deepCopy(fields()[6].schema(), other.Gender);
+        fieldSetFlags()[6] = other.fieldSetFlags()[6];
+      }
+      if (isValidValue(fields()[7], other.EMail)) {
+        this.EMail = data().deepCopy(fields()[7].schema(), other.EMail);
+        fieldSetFlags()[7] = other.fieldSetFlags()[7];
+      }
+      if (isValidValue(fields()[8], other.FathersName)) {
+        this.FathersName = data().deepCopy(fields()[8].schema(), other.FathersName);
+        fieldSetFlags()[8] = other.fieldSetFlags()[8];
+      }
+      if (isValidValue(fields()[9], other.MothersName)) {
+        this.MothersName = data().deepCopy(fields()[9].schema(), other.MothersName);
+        fieldSetFlags()[9] = other.fieldSetFlags()[9];
+      }
+      if (isValidValue(fields()[10], other.DateofBirth)) {
+        this.DateofBirth = data().deepCopy(fields()[10].schema(), other.DateofBirth);
+        fieldSetFlags()[10] = other.fieldSetFlags()[10];
+      }
+      if (isValidValue(fields()[11], other.AgeinYrs)) {
+        this.AgeinYrs = data().deepCopy(fields()[11].schema(), other.AgeinYrs);
+        fieldSetFlags()[11] = other.fieldSetFlags()[11];
+      }
+      if (isValidValue(fields()[12], other.WeightinKgs)) {
+        this.WeightinKgs = data().deepCopy(fields()[12].schema(), other.WeightinKgs);
+        fieldSetFlags()[12] = other.fieldSetFlags()[12];
+      }
+      if (isValidValue(fields()[13], other.YearofJoining)) {
+        this.YearofJoining = data().deepCopy(fields()[13].schema(), other.YearofJoining);
+        fieldSetFlags()[13] = other.fieldSetFlags()[13];
+      }
+      if (isValidValue(fields()[14], other.MonthofJoining)) {
+        this.MonthofJoining = data().deepCopy(fields()[14].schema(), other.MonthofJoining);
+        fieldSetFlags()[14] = other.fieldSetFlags()[14];
+      }
+      if (isValidValue(fields()[15], other.Salary)) {
+        this.Salary = data().deepCopy(fields()[15].schema(), other.Salary);
+        fieldSetFlags()[15] = other.fieldSetFlags()[15];
+      }
+      if (isValidValue(fields()[16], other.SSN)) {
+        this.SSN = data().deepCopy(fields()[16].schema(), other.SSN);
+        fieldSetFlags()[16] = other.fieldSetFlags()[16];
+      }
+      if (isValidValue(fields()[17], other.PhoneNo)) {
+        this.PhoneNo = data().deepCopy(fields()[17].schema(), other.PhoneNo);
+        fieldSetFlags()[17] = other.fieldSetFlags()[17];
+      }
+      if (isValidValue(fields()[18], other.PlaceName)) {
+        this.PlaceName = data().deepCopy(fields()[18].schema(), other.PlaceName);
+        fieldSetFlags()[18] = other.fieldSetFlags()[18];
+      }
+      if (isValidValue(fields()[19], other.County)) {
+        this.County = data().deepCopy(fields()[19].schema(), other.County);
+        fieldSetFlags()[19] = other.fieldSetFlags()[19];
+      }
+      if (isValidValue(fields()[20], other.City)) {
+        this.City = data().deepCopy(fields()[20].schema(), other.City);
+        fieldSetFlags()[20] = other.fieldSetFlags()[20];
+      }
+      if (isValidValue(fields()[21], other.State)) {
+        this.State = data().deepCopy(fields()[21].schema(), other.State);
+        fieldSetFlags()[21] = other.fieldSetFlags()[21];
+      }
     }
 
     /**
@@ -236,6 +616,82 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[2], other.location)) {
         this.location = data().deepCopy(fields()[2].schema(), other.location);
         fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.FirstName)) {
+        this.FirstName = data().deepCopy(fields()[3].schema(), other.FirstName);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.MiddleInitial)) {
+        this.MiddleInitial = data().deepCopy(fields()[4].schema(), other.MiddleInitial);
+        fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.LastName)) {
+        this.LastName = data().deepCopy(fields()[5].schema(), other.LastName);
+        fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.Gender)) {
+        this.Gender = data().deepCopy(fields()[6].schema(), other.Gender);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.EMail)) {
+        this.EMail = data().deepCopy(fields()[7].schema(), other.EMail);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.FathersName)) {
+        this.FathersName = data().deepCopy(fields()[8].schema(), other.FathersName);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.MothersName)) {
+        this.MothersName = data().deepCopy(fields()[9].schema(), other.MothersName);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.DateofBirth)) {
+        this.DateofBirth = data().deepCopy(fields()[10].schema(), other.DateofBirth);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.AgeinYrs)) {
+        this.AgeinYrs = data().deepCopy(fields()[11].schema(), other.AgeinYrs);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.WeightinKgs)) {
+        this.WeightinKgs = data().deepCopy(fields()[12].schema(), other.WeightinKgs);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.YearofJoining)) {
+        this.YearofJoining = data().deepCopy(fields()[13].schema(), other.YearofJoining);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.MonthofJoining)) {
+        this.MonthofJoining = data().deepCopy(fields()[14].schema(), other.MonthofJoining);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.Salary)) {
+        this.Salary = data().deepCopy(fields()[15].schema(), other.Salary);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.SSN)) {
+        this.SSN = data().deepCopy(fields()[16].schema(), other.SSN);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.PhoneNo)) {
+        this.PhoneNo = data().deepCopy(fields()[17].schema(), other.PhoneNo);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.PlaceName)) {
+        this.PlaceName = data().deepCopy(fields()[18].schema(), other.PlaceName);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.County)) {
+        this.County = data().deepCopy(fields()[19].schema(), other.County);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.City)) {
+        this.City = data().deepCopy(fields()[20].schema(), other.City);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.State)) {
+        this.State = data().deepCopy(fields()[21].schema(), other.State);
+        fieldSetFlags()[21] = true;
       }
     }
 
@@ -283,7 +739,7 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
       * Gets the value of the 'amount' field.
       * @return The value.
       */
-    public double getAmount() {
+    public int getAmount() {
       return amount;
     }
 
@@ -293,7 +749,7 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'amount'.
       * @return This builder.
       */
-    public com.schema.Payment.Builder setAmount(double value) {
+    public com.schema.Payment.Builder setAmount(int value) {
       validate(fields()[1], value);
       this.amount = value;
       fieldSetFlags()[1] = true;
@@ -358,14 +814,793 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'FirstName' field.
+      * @return The value.
+      */
+    public java.lang.String getFirstName() {
+      return FirstName;
+    }
+
+
+    /**
+      * Sets the value of the 'FirstName' field.
+      * @param value The value of 'FirstName'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setFirstName(java.lang.String value) {
+      validate(fields()[3], value);
+      this.FirstName = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'FirstName' field has been set.
+      * @return True if the 'FirstName' field has been set, false otherwise.
+      */
+    public boolean hasFirstName() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'FirstName' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearFirstName() {
+      FirstName = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'MiddleInitial' field.
+      * @return The value.
+      */
+    public java.lang.String getMiddleInitial() {
+      return MiddleInitial;
+    }
+
+
+    /**
+      * Sets the value of the 'MiddleInitial' field.
+      * @param value The value of 'MiddleInitial'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setMiddleInitial(java.lang.String value) {
+      validate(fields()[4], value);
+      this.MiddleInitial = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'MiddleInitial' field has been set.
+      * @return True if the 'MiddleInitial' field has been set, false otherwise.
+      */
+    public boolean hasMiddleInitial() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'MiddleInitial' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearMiddleInitial() {
+      MiddleInitial = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'LastName' field.
+      * @return The value.
+      */
+    public java.lang.String getLastName() {
+      return LastName;
+    }
+
+
+    /**
+      * Sets the value of the 'LastName' field.
+      * @param value The value of 'LastName'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setLastName(java.lang.String value) {
+      validate(fields()[5], value);
+      this.LastName = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'LastName' field has been set.
+      * @return True if the 'LastName' field has been set, false otherwise.
+      */
+    public boolean hasLastName() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'LastName' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearLastName() {
+      LastName = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'Gender' field.
+      * @return The value.
+      */
+    public java.lang.String getGender() {
+      return Gender;
+    }
+
+
+    /**
+      * Sets the value of the 'Gender' field.
+      * @param value The value of 'Gender'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setGender(java.lang.String value) {
+      validate(fields()[6], value);
+      this.Gender = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'Gender' field has been set.
+      * @return True if the 'Gender' field has been set, false otherwise.
+      */
+    public boolean hasGender() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'Gender' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearGender() {
+      Gender = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'EMail' field.
+      * @return The value.
+      */
+    public java.lang.String getEMail() {
+      return EMail;
+    }
+
+
+    /**
+      * Sets the value of the 'EMail' field.
+      * @param value The value of 'EMail'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setEMail(java.lang.String value) {
+      validate(fields()[7], value);
+      this.EMail = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'EMail' field has been set.
+      * @return True if the 'EMail' field has been set, false otherwise.
+      */
+    public boolean hasEMail() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'EMail' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearEMail() {
+      EMail = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'FathersName' field.
+      * @return The value.
+      */
+    public java.lang.String getFathersName() {
+      return FathersName;
+    }
+
+
+    /**
+      * Sets the value of the 'FathersName' field.
+      * @param value The value of 'FathersName'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setFathersName(java.lang.String value) {
+      validate(fields()[8], value);
+      this.FathersName = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'FathersName' field has been set.
+      * @return True if the 'FathersName' field has been set, false otherwise.
+      */
+    public boolean hasFathersName() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'FathersName' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearFathersName() {
+      FathersName = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'MothersName' field.
+      * @return The value.
+      */
+    public java.lang.String getMothersName() {
+      return MothersName;
+    }
+
+
+    /**
+      * Sets the value of the 'MothersName' field.
+      * @param value The value of 'MothersName'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setMothersName(java.lang.String value) {
+      validate(fields()[9], value);
+      this.MothersName = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'MothersName' field has been set.
+      * @return True if the 'MothersName' field has been set, false otherwise.
+      */
+    public boolean hasMothersName() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'MothersName' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearMothersName() {
+      MothersName = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'DateofBirth' field.
+      * @return The value.
+      */
+    public java.lang.String getDateofBirth() {
+      return DateofBirth;
+    }
+
+
+    /**
+      * Sets the value of the 'DateofBirth' field.
+      * @param value The value of 'DateofBirth'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setDateofBirth(java.lang.String value) {
+      validate(fields()[10], value);
+      this.DateofBirth = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'DateofBirth' field has been set.
+      * @return True if the 'DateofBirth' field has been set, false otherwise.
+      */
+    public boolean hasDateofBirth() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'DateofBirth' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearDateofBirth() {
+      DateofBirth = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'AgeinYrs' field.
+      * @return The value.
+      */
+    public java.lang.String getAgeinYrs() {
+      return AgeinYrs;
+    }
+
+
+    /**
+      * Sets the value of the 'AgeinYrs' field.
+      * @param value The value of 'AgeinYrs'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setAgeinYrs(java.lang.String value) {
+      validate(fields()[11], value);
+      this.AgeinYrs = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'AgeinYrs' field has been set.
+      * @return True if the 'AgeinYrs' field has been set, false otherwise.
+      */
+    public boolean hasAgeinYrs() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'AgeinYrs' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearAgeinYrs() {
+      AgeinYrs = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'WeightinKgs' field.
+      * @return The value.
+      */
+    public java.lang.String getWeightinKgs() {
+      return WeightinKgs;
+    }
+
+
+    /**
+      * Sets the value of the 'WeightinKgs' field.
+      * @param value The value of 'WeightinKgs'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setWeightinKgs(java.lang.String value) {
+      validate(fields()[12], value);
+      this.WeightinKgs = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'WeightinKgs' field has been set.
+      * @return True if the 'WeightinKgs' field has been set, false otherwise.
+      */
+    public boolean hasWeightinKgs() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'WeightinKgs' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearWeightinKgs() {
+      WeightinKgs = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'YearofJoining' field.
+      * @return The value.
+      */
+    public java.lang.String getYearofJoining() {
+      return YearofJoining;
+    }
+
+
+    /**
+      * Sets the value of the 'YearofJoining' field.
+      * @param value The value of 'YearofJoining'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setYearofJoining(java.lang.String value) {
+      validate(fields()[13], value);
+      this.YearofJoining = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'YearofJoining' field has been set.
+      * @return True if the 'YearofJoining' field has been set, false otherwise.
+      */
+    public boolean hasYearofJoining() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'YearofJoining' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearYearofJoining() {
+      YearofJoining = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'MonthofJoining' field.
+      * @return The value.
+      */
+    public java.lang.String getMonthofJoining() {
+      return MonthofJoining;
+    }
+
+
+    /**
+      * Sets the value of the 'MonthofJoining' field.
+      * @param value The value of 'MonthofJoining'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setMonthofJoining(java.lang.String value) {
+      validate(fields()[14], value);
+      this.MonthofJoining = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'MonthofJoining' field has been set.
+      * @return True if the 'MonthofJoining' field has been set, false otherwise.
+      */
+    public boolean hasMonthofJoining() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'MonthofJoining' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearMonthofJoining() {
+      MonthofJoining = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'Salary' field.
+      * @return The value.
+      */
+    public java.lang.String getSalary() {
+      return Salary;
+    }
+
+
+    /**
+      * Sets the value of the 'Salary' field.
+      * @param value The value of 'Salary'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setSalary(java.lang.String value) {
+      validate(fields()[15], value);
+      this.Salary = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'Salary' field has been set.
+      * @return True if the 'Salary' field has been set, false otherwise.
+      */
+    public boolean hasSalary() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'Salary' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearSalary() {
+      Salary = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'SSN' field.
+      * @return The value.
+      */
+    public java.lang.String getSSN() {
+      return SSN;
+    }
+
+
+    /**
+      * Sets the value of the 'SSN' field.
+      * @param value The value of 'SSN'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setSSN(java.lang.String value) {
+      validate(fields()[16], value);
+      this.SSN = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'SSN' field has been set.
+      * @return True if the 'SSN' field has been set, false otherwise.
+      */
+    public boolean hasSSN() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'SSN' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearSSN() {
+      SSN = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'PhoneNo' field.
+      * @return The value.
+      */
+    public java.lang.String getPhoneNo() {
+      return PhoneNo;
+    }
+
+
+    /**
+      * Sets the value of the 'PhoneNo' field.
+      * @param value The value of 'PhoneNo'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setPhoneNo(java.lang.String value) {
+      validate(fields()[17], value);
+      this.PhoneNo = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'PhoneNo' field has been set.
+      * @return True if the 'PhoneNo' field has been set, false otherwise.
+      */
+    public boolean hasPhoneNo() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'PhoneNo' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearPhoneNo() {
+      PhoneNo = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'PlaceName' field.
+      * @return The value.
+      */
+    public java.lang.String getPlaceName() {
+      return PlaceName;
+    }
+
+
+    /**
+      * Sets the value of the 'PlaceName' field.
+      * @param value The value of 'PlaceName'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setPlaceName(java.lang.String value) {
+      validate(fields()[18], value);
+      this.PlaceName = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'PlaceName' field has been set.
+      * @return True if the 'PlaceName' field has been set, false otherwise.
+      */
+    public boolean hasPlaceName() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'PlaceName' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearPlaceName() {
+      PlaceName = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'County' field.
+      * @return The value.
+      */
+    public java.lang.String getCounty() {
+      return County;
+    }
+
+
+    /**
+      * Sets the value of the 'County' field.
+      * @param value The value of 'County'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setCounty(java.lang.String value) {
+      validate(fields()[19], value);
+      this.County = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'County' field has been set.
+      * @return True if the 'County' field has been set, false otherwise.
+      */
+    public boolean hasCounty() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'County' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearCounty() {
+      County = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'City' field.
+      * @return The value.
+      */
+    public java.lang.String getCity() {
+      return City;
+    }
+
+
+    /**
+      * Sets the value of the 'City' field.
+      * @param value The value of 'City'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setCity(java.lang.String value) {
+      validate(fields()[20], value);
+      this.City = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'City' field has been set.
+      * @return True if the 'City' field has been set, false otherwise.
+      */
+    public boolean hasCity() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'City' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearCity() {
+      City = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'State' field.
+      * @return The value.
+      */
+    public java.lang.String getState() {
+      return State;
+    }
+
+
+    /**
+      * Sets the value of the 'State' field.
+      * @param value The value of 'State'.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder setState(java.lang.String value) {
+      validate(fields()[21], value);
+      this.State = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'State' field has been set.
+      * @return True if the 'State' field has been set, false otherwise.
+      */
+    public boolean hasState() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'State' field.
+      * @return This builder.
+      */
+    public com.schema.Payment.Builder clearState() {
+      State = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
     @Override
     @SuppressWarnings("unchecked")
     public Payment build() {
       try {
         Payment record = new Payment();
         record.id = fieldSetFlags()[0] ? this.id : (java.lang.String) defaultValue(fields()[0]);
-        record.amount = fieldSetFlags()[1] ? this.amount : (java.lang.Double) defaultValue(fields()[1]);
+        record.amount = fieldSetFlags()[1] ? this.amount : (java.lang.Integer) defaultValue(fields()[1]);
         record.location = fieldSetFlags()[2] ? this.location : (java.lang.String) defaultValue(fields()[2]);
+        record.FirstName = fieldSetFlags()[3] ? this.FirstName : (java.lang.String) defaultValue(fields()[3]);
+        record.MiddleInitial = fieldSetFlags()[4] ? this.MiddleInitial : (java.lang.String) defaultValue(fields()[4]);
+        record.LastName = fieldSetFlags()[5] ? this.LastName : (java.lang.String) defaultValue(fields()[5]);
+        record.Gender = fieldSetFlags()[6] ? this.Gender : (java.lang.String) defaultValue(fields()[6]);
+        record.EMail = fieldSetFlags()[7] ? this.EMail : (java.lang.String) defaultValue(fields()[7]);
+        record.FathersName = fieldSetFlags()[8] ? this.FathersName : (java.lang.String) defaultValue(fields()[8]);
+        record.MothersName = fieldSetFlags()[9] ? this.MothersName : (java.lang.String) defaultValue(fields()[9]);
+        record.DateofBirth = fieldSetFlags()[10] ? this.DateofBirth : (java.lang.String) defaultValue(fields()[10]);
+        record.AgeinYrs = fieldSetFlags()[11] ? this.AgeinYrs : (java.lang.String) defaultValue(fields()[11]);
+        record.WeightinKgs = fieldSetFlags()[12] ? this.WeightinKgs : (java.lang.String) defaultValue(fields()[12]);
+        record.YearofJoining = fieldSetFlags()[13] ? this.YearofJoining : (java.lang.String) defaultValue(fields()[13]);
+        record.MonthofJoining = fieldSetFlags()[14] ? this.MonthofJoining : (java.lang.String) defaultValue(fields()[14]);
+        record.Salary = fieldSetFlags()[15] ? this.Salary : (java.lang.String) defaultValue(fields()[15]);
+        record.SSN = fieldSetFlags()[16] ? this.SSN : (java.lang.String) defaultValue(fields()[16]);
+        record.PhoneNo = fieldSetFlags()[17] ? this.PhoneNo : (java.lang.String) defaultValue(fields()[17]);
+        record.PlaceName = fieldSetFlags()[18] ? this.PlaceName : (java.lang.String) defaultValue(fields()[18]);
+        record.County = fieldSetFlags()[19] ? this.County : (java.lang.String) defaultValue(fields()[19]);
+        record.City = fieldSetFlags()[20] ? this.City : (java.lang.String) defaultValue(fields()[20]);
+        record.State = fieldSetFlags()[21] ? this.State : (java.lang.String) defaultValue(fields()[21]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
@@ -400,9 +1635,47 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
   {
     out.writeString(this.id);
 
-    out.writeDouble(this.amount);
+    out.writeInt(this.amount);
 
     out.writeString(this.location);
+
+    out.writeString(this.FirstName);
+
+    out.writeString(this.MiddleInitial);
+
+    out.writeString(this.LastName);
+
+    out.writeString(this.Gender);
+
+    out.writeString(this.EMail);
+
+    out.writeString(this.FathersName);
+
+    out.writeString(this.MothersName);
+
+    out.writeString(this.DateofBirth);
+
+    out.writeString(this.AgeinYrs);
+
+    out.writeString(this.WeightinKgs);
+
+    out.writeString(this.YearofJoining);
+
+    out.writeString(this.MonthofJoining);
+
+    out.writeString(this.Salary);
+
+    out.writeString(this.SSN);
+
+    out.writeString(this.PhoneNo);
+
+    out.writeString(this.PlaceName);
+
+    out.writeString(this.County);
+
+    out.writeString(this.City);
+
+    out.writeString(this.State);
 
   }
 
@@ -413,23 +1686,137 @@ public class Payment extends org.apache.avro.specific.SpecificRecordBase impleme
     if (fieldOrder == null) {
       this.id = in.readString();
 
-      this.amount = in.readDouble();
+      this.amount = in.readInt();
 
       this.location = in.readString();
 
+      this.FirstName = in.readString();
+
+      this.MiddleInitial = in.readString();
+
+      this.LastName = in.readString();
+
+      this.Gender = in.readString();
+
+      this.EMail = in.readString();
+
+      this.FathersName = in.readString();
+
+      this.MothersName = in.readString();
+
+      this.DateofBirth = in.readString();
+
+      this.AgeinYrs = in.readString();
+
+      this.WeightinKgs = in.readString();
+
+      this.YearofJoining = in.readString();
+
+      this.MonthofJoining = in.readString();
+
+      this.Salary = in.readString();
+
+      this.SSN = in.readString();
+
+      this.PhoneNo = in.readString();
+
+      this.PlaceName = in.readString();
+
+      this.County = in.readString();
+
+      this.City = in.readString();
+
+      this.State = in.readString();
+
     } else {
-      for (int i = 0; i < 3; i++) {
+      for (int i = 0; i < 22; i++) {
         switch (fieldOrder[i].pos()) {
         case 0:
           this.id = in.readString();
           break;
 
         case 1:
-          this.amount = in.readDouble();
+          this.amount = in.readInt();
           break;
 
         case 2:
           this.location = in.readString();
+          break;
+
+        case 3:
+          this.FirstName = in.readString();
+          break;
+
+        case 4:
+          this.MiddleInitial = in.readString();
+          break;
+
+        case 5:
+          this.LastName = in.readString();
+          break;
+
+        case 6:
+          this.Gender = in.readString();
+          break;
+
+        case 7:
+          this.EMail = in.readString();
+          break;
+
+        case 8:
+          this.FathersName = in.readString();
+          break;
+
+        case 9:
+          this.MothersName = in.readString();
+          break;
+
+        case 10:
+          this.DateofBirth = in.readString();
+          break;
+
+        case 11:
+          this.AgeinYrs = in.readString();
+          break;
+
+        case 12:
+          this.WeightinKgs = in.readString();
+          break;
+
+        case 13:
+          this.YearofJoining = in.readString();
+          break;
+
+        case 14:
+          this.MonthofJoining = in.readString();
+          break;
+
+        case 15:
+          this.Salary = in.readString();
+          break;
+
+        case 16:
+          this.SSN = in.readString();
+          break;
+
+        case 17:
+          this.PhoneNo = in.readString();
+          break;
+
+        case 18:
+          this.PlaceName = in.readString();
+          break;
+
+        case 19:
+          this.County = in.readString();
+          break;
+
+        case 20:
+          this.City = in.readString();
+          break;
+
+        case 21:
+          this.State = in.readString();
           break;
 
         default:

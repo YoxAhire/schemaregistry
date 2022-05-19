@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class ProducerAppication {
-    private static final String TOPIC= "yogesh4";
+    private static final String TOPIC= "yog78";
 
     public static void main(String[] args) {
         System.out.println("Inside main");
@@ -38,7 +38,9 @@ public class ProducerAppication {
             for (Object payObject : payList) {
                 Payment paymentobject = (Payment) payObject;
 
-                producer.send(new ProducerRecord<String, Payment>(TOPIC,paymentobject.getId(),paymentobject));
+                //producer.send(new ProducerRecord<String, Payment>(TOPIC,paymentobject.getId(),paymentobject));
+
+                producer.send(new ProducerRecord<String, Payment>(TOPIC,paymentobject.getAgeinYrs(),paymentobject));
 
             }
 
